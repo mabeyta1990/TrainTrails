@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <title>Train Trails</title>
+    <!-- //FIREBASE SCRIPT -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <!--MOMENT SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+    <br>
+    <div id="heading">
+        <span id="headingText">   TRAIN🚆TRAILS</span>
+    </div>
+    <div id="clock">
+        <span id="clock text"></span>
+    </div>
+
+        <div class="container" id="tableContainer">
+            <div class="row">
+                    <table style="text-align:center" class="table table-hover" id="trainTable">
+                            <thead>
+                              <tr id='mainRow'>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                                <th scope="col">Delete</th>
+                              </tr>
+                            </thead>
+                            <tbody id="tbodyTag">
+                              
+                            </tbody>
+                          </table>
+                          
+            </div>
+        </div>
+        <hr>
+    <div class="container">
+        <div class="row">
+            <div class="searchArea col-sm-12 col-lg-12">
+                    <h2 style="text-align:center">Add Train</h2>
+                    <div class="form-area">  
+                            <form role="form">
+                            <br style="clear:both">
+                                
+                                <hr>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="trainName" name="Train Name" placeholder="Train Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="destination" name="Destination" placeholder="Destination" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="firstTrainTime" name="First Train Time (Military Time)" placeholder="First Train Time (Military Time, HH:mm)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="frequency" name="Frequency (Minutes)" placeholder="Frequency (Minutes)" required>
+                            </div> 
+                             
+                            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit</button>
+                            </form>
+                        </div>             
+            </div>
+        </div>
+    </div>
+
+    
+<!-- //JQUERY SCRIPT -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- //AJAX SCRIPT -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<!-- //BOOTSTRAP SCRIPT -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    
+<!-- //LOCAL JAVASCRIPT LOGIC FILE -->
+<script src="./assets/javascript/logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.jumbotron {
+    background-image:url("./assets/images/jumbotronBackground.jpg");
+    background-size: contain;
+}
+body {
+    background-image:url("./assets/images/mainBackground.jpg");
+    background-size: cover;
+    background-color: grey;
+    font-family: 'Raleway', sans-serif;
+}
+.topArticlesBackground {
+    text-align: center;
+    color: white;
+
+}
+h1 {
+    font-size: 75px;
+    display: inline-block;
+    background-color: white;
+}
+h2 {
+    font-weight: bolder;
+    text-shadow: -1.5px 0 white, 0 1.5px white, 1.5px 0 white, 0 -1.5px white;
+
+}
+#tableContainer {
+    background-color: white;
+}
+#headingText {
+    font-size: 75px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#heading {
+    text-align: center;
+}
+#clock {
+    text-align: center;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 45px;
+}
+#mainRow {
+    font-size: 20px;
+    text-decoration: underline;
+}
