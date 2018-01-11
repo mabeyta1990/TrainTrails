@@ -32,7 +32,7 @@ $('#submit').on('click', function () {
     place: destination,
     ftrain: firstTrain,
     freq: frequency,
-    uid: trainClass
+  
 
   }
 
@@ -73,7 +73,7 @@ database.ref().on("child_added", function(childSnapshot) {
   let destination = childSnapshot.val().place;
   let firstTrain = childSnapshot.val().ftrain;
   let frequency = childSnapshot.val().freq;
-  let trainClass = childSnapshot.key;
+  
 
 
   // FIRST TRAIN TIME 
@@ -102,7 +102,7 @@ database.ref().on("child_added", function(childSnapshot) {
         <td>${frequency}</td>
         <td>${nextTrain}</td>
         <td>${minToFirst}</td>
-        <td><button id="deleteButton" data-train="${trainClass}" type="button" class="deleteButton btn btn-danger">X</button></td>
+        <td><button id="deleteButton" type="button" class="deleteButton btn btn-danger">X</button></td>
       </tr>`);
 
 
